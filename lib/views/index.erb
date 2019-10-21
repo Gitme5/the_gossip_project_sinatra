@@ -1,0 +1,24 @@
+<html>
+  
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  
+  <body>
+    <h1>Mon super site de gossip, depuis le dossier views !</h1>
+  	<p>Pour créer un lien suivre : <a href="/gossips/new/">créer un nouveau potin</a></p>
+
+  	<!-- Insérer les variables Ruby -->
+  	<% gossips.each_with_index do |gossip,id| %>
+        <p>
+          <strong>Potin</strong>
+          <strong><%= id+1%><br/></strong>
+          <%= gossip.author %><br/>
+          <%= gossip.content %><br/>
+          <a href="/gossips/<%= id+1 %>">Consulter</a></p>
+        </p>
+    <% end %>
+
+  </body>
+
+</html>
