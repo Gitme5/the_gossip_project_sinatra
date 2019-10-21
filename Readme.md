@@ -1,10 +1,6 @@
-MORPION POO
+LES POTINS DE THP avec SINATRA 
 
-This is a morpion game.
-Each player enters its name. The game decides who starts and what symbol each user will use.
-The first to align 3 symbols wins.
-If the table is filled without winner we have a draw.
-
-Done on V2 :
-- Handle wrong entries from user => None existing case
-- Handle wrong entries from user => Not empty case
+This app will display all the potins of THP.
+All Potins are displayed on the home page.
+You can display each potins separately on its page.
+You can add the last potin you want by clicking on "Créer un nouveau potin"
